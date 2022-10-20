@@ -61,3 +61,10 @@ C:\Users\dfiel\David-SyncThing\School Resources\2022 Fall\Capstone I\Week 9\Pet 
 C:\Users\dfiel\David-SyncThing\School Resources\2022 Fall\Capstone I\Week 9\Pet Medicine UI\PetMedUI\PetMedUI\obj\Debug\PetMedUI.dll
 C:\Users\dfiel\David-SyncThing\School Resources\2022 Fall\Capstone I\Week 9\Pet Medicine UI\PetMedUI\PetMedUI\obj\Debug\PetMedUI.xml
 C:\Users\dfiel\David-SyncThing\School Resources\2022 Fall\Capstone I\Week 9\Pet Medicine UI\PetMedUI\PetMedUI\obj\Debug\PetMedUI.pdb
+C:\Users\dfiel\David-SyncThing\School Resources\2022 Fall\Capstone I\Week 9\Pet Medicine UI\PetMedUI\PetMedUI\bin\Microsoft.Owin.dll
+C:\Users\dfiel\David-SyncThing\School Resources\2022 Fall\Capstone I\Week 9\Pet Medicine UI\PetMedUI\PetMedUI\bin\Microsoft.Owin.FileSystems.dll
+C:\Users\dfiel\David-SyncThing\School Resources\2022 Fall\Capstone I\Week 9\Pet Medicine UI\PetMedUI\PetMedUI\bin\Microsoft.Owin.StaticFiles.dll
+C:\Users\dfiel\David-SyncThing\School Resources\2022 Fall\Capstone I\Week 9\Pet Medicine UI\PetMedUI\PetMedUI\bin\Owin.dll
+C:\Users\dfiel\David-SyncThing\School Resources\2022 Fall\Capstone I\Week 9\Pet Medicine UI\PetMedUI\PetMedUI\bin\Microsoft.Owin.xml
+C:\Users\dfiel\David-SyncThing\School Resources\2022 Fall\Capstone I\Week 9\Pet Medicine UI\PetMedUI\PetMedUI\bin\Microsoft.Owin.FileSystems.xml
+C:\Users\dfiel\David-SyncThing\School Resources\2022 Fall\Capstone I\Week 9\Pet Medicine UI\PetMedUI\PetMedUI\bin\Microsoft.Owin.StaticFiles.xml
