@@ -37,7 +37,7 @@ PetMedUI
  Returns the Asp log object.
  </summary>
 </member>
-<member name="F:PetMedUI.Main._head">
+<member name="F:PetMedUI.Bootstrap._head">
 <summary>
 head control.
 </summary>
@@ -46,7 +46,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:PetMedUI.Main._form1">
+<member name="F:PetMedUI.Bootstrap._form1">
 <summary>
 form1 control.
 </summary>
@@ -55,7 +55,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:PetMedUI.Main._ContentPlaceHolder1">
+<member name="F:PetMedUI.Bootstrap._ContentPlaceHolder1">
 <summary>
 ContentPlaceHolder1 control.
 </summary>

@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Main
+Partial Public Class Bootstrap
 
     '''<summary>
     '''head control.

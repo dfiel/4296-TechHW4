@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Blank Page - Brand</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-</head>
-
-<body id="page-top">
+﻿<%@ Page Title="Dashboard - PetMed" Language="vb" AutoEventWireup="false" MasterPageFile="~/Bootstrap.Master" CodeBehind="index.aspx.vb" Inherits="PetMedUI.index" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div id="wrapper">
         <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
             <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
@@ -19,9 +10,9 @@
                 </a>
                 <hr class="sidebar-divider my-0">
                 <ul class="navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item"><a class="nav-link" href="index.aspx"><i class="fas fa-tachometer-alt"></i><span>Home</span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.aspx"><i class="fas fa-tachometer-alt"></i><span>Home</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="petprofile.aspx"><i class="fas fa-cat"></i><span>Pet Profile</span></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="placeorder.aspx"><i class="fas fa-prescription-bottle-alt"></i><span>Place Order</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="placeorder.aspx"><i class="fas fa-prescription-bottle-alt"></i><span>Place Order</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="updateorder.aspx"><i class="fas fa-clipboard-list"></i><span>Update Order</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="replaceorder.aspx"><i class="fas fa-prescription-bottle"></i><span>Replace Order</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="login.aspx"><i class="far fa-user-circle"></i><span>Login</span></a></li>
@@ -92,52 +83,65 @@
                     </div>
                 </nav>
                 <div class="container-fluid">
-                    <h3 class="text-dark mb-1">Place Medicine Order</h3>
-                    <div class="card">
-                        <div class="card-header">
-                            <p class="text-primary m-0 fw-bold">Place Order</p>
+                    <div class="d-sm-flex justify-content-between align-items-center mb-4">
+                        <h3 class="text-dark mb-0">Home</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-primary py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-primary fw-bold text-xs mb-1"><span>For Pet owners</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><a class="text-decoration-none" href="petprofile.aspx"><span>Pet Profile</span></a></div>
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-cat fa-2x text-gray-300"></i></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <form>
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="mb-3"><label class="form-label" for="pet_owner"><strong>Pet Owner</strong></label><input class="form-control" type="search" id="pet_owner" placeholder="John Doe" name="pet_owner"></div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="mb-3"><label class="form-label" for="pet"><strong>Pet</strong></label><input class="form-control" type="search" id="pet" placeholder="Rex" name="pet"></div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="mb-3"><label class="form-label" for="medicine"><strong>Medicine</strong><br></label><input class="form-control" type="search" id="medicine" placeholder="Doxepin" name="medicine"></div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="mb-3"><label class="form-label" for="medicine_count"><strong>Medicine Count</strong></label><input class="form-control" type="number" id="medicine_count" placeholder="4" name="medicine_count"></div>
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-success py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-success fw-bold text-xs mb-1"><span>FOR veterinarians</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><a class="text-decoration-none" href="placeorder.aspx"><span>Place Order</span></a></div>
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-prescription-bottle-alt fa-2x text-gray-300"></i></div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="mb-3"><label class="form-label" for="prescribing_vet"><strong>Prescribing Vet</strong><br></label><input class="form-control" type="search" id="prescribing_vet" placeholder="Jane Goodall" name="prescribing_vet"></div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="mb-3"><label class="form-label" for="vet_contact"><strong>Vet Contact</strong></label><input class="form-control" type="text" id="vet_contact" placeholder="(215) 867-5309" name="vet_contact" readonly=""></div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="mb-3"><label class="form-label" for="owner_phone"><strong>Owner Phone Number</strong><br></label><input class="form-control" type="text" id="owner_phone" placeholder="(215) 204-1727" name="owner_phone" readonly=""></div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="mb-3"><label class="form-label" for="owner_email"><strong>Owner Email Address</strong></label><input class="form-control" type="text" id="owner_email" placeholder="user@example.com" name="owner_email" readonly=""></div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="mb-3"><label class="form-label" for="shipping_address"><strong>Shipping Address</strong></label><input class="form-control" type="text" id="shipping_address" placeholder="1945 N 12th St" name="shipping_address" readonly=""></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-info py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-info fw-bold text-xs mb-1"><span>for cs representatives</span></div>
+                                            <div class="row g-0 align-items-center">
+                                                <div class="col-auto col-xxl-10">
+                                                    <div class="text-dark fw-bold h5 mb-0 me-3"><a class="text-decoration-none" href="updateorder.aspx"><span>Update Order</span></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-clipboard-list fa-2x text-gray-300"></i></div>
                                     </div>
                                 </div>
-                                <div class="mb-3"><button class="btn btn-primary btn-sm" type="submit">Submit Order</button></div>
-                            </form>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-warning py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-warning fw-bold text-xs mb-1"><span>for dispensing dept</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><a class="text-decoration-none" href="replaceorder.aspx"><span>Replace Order</span></a></div>
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-prescription-bottle fa-2x text-gray-300"></i></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -149,9 +153,4 @@
             </footer>
         </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/theme.js"></script>
-</body>
-
-</html>
+</asp:Content>

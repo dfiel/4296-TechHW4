@@ -12,5 +12,5 @@ Option Explicit On
 
 
 
-Partial Public Class WebForm1
+Partial Public Class register
 End Class
